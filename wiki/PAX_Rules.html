@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui, Consultant, Access Success LLC" />
+  <meta name="dcterms.date" content="2024-07-14" />
+  <title>Pax Rules, with Heading Structure for Category, Impact, and Name</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Pax Rules, with Heading Structure for Category,
+Impact, and Name</h1>
+<p class="author">Jamal Mazrui, Consultant, Access Success LLC</p>
+<p class="date">July 14, 2024</p>
+</header>
+<h1
+id="pax-rules-with-heading-structure-for-category-impact-and-name">Pax
+Rules, with Heading Structure for Category, Impact, and Name</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li>Introduction</li>
+<li>Screens</li>
+<li>Controls</li>
+<li>Gestures</li>
+<li>Navigation</li>
+<li>Forms</li>
+<li>Readability</li>
+<li>Media</li>
+<li>Apps</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Central to the Pax framework is a comprehensive, cross-surface set of
+accessibility rules, with consistent terminology across web, mobile, and
+desktop surfaces. Pax implements a consistent way of measuring
+accessibility regardless of the tool for automated testing or the
+procedure for manual testing.</p>
+<p>Pax rules are divided into eight UI categories. Each may be
+considered a conceptual lense for identifying accessibility problems
+that might not otherwise be found.</p>
+<h2 id="screens">Screens</h2>
+<h3 id="critical">Critical</h3>
+<h4 id="adjustable-moving-content">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major">Major</h3>
+<h4 id="content-warning">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor">Minor</h3>
+<h4 id="proper-screen-name">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+<h2 id="controls">Controls</h2>
+<h3 id="critical-1">Critical</h3>
+<h4 id="adjustable-moving-content-1">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation-1">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name-1">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency-1">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content-1">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh-1">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling-1">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css-1">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html-1">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name-1">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message-1">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language-1">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major-1">Major</h3>
+<h4 id="content-warning-1">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name-1">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help-1">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css-1">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html-1">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor-1">Minor</h3>
+<h4 id="proper-screen-name-1">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+<h2 id="gestures">Gestures</h2>
+<h3 id="critical-2">Critical</h3>
+<h4 id="adjustable-moving-content-2">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation-2">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name-2">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency-2">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content-2">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh-2">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling-2">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css-2">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html-2">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name-2">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message-2">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language-2">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major-2">Major</h3>
+<h4 id="content-warning-2">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name-2">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help-2">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css-2">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html-2">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor-2">Minor</h3>
+<h4 id="proper-screen-name-2">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+<h2 id="navigation">Navigation</h2>
+<h3 id="critical-3">Critical</h3>
+<h4 id="adjustable-moving-content-3">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation-3">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name-3">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency-3">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content-3">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh-3">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling-3">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css-3">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html-3">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name-3">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message-3">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language-3">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major-3">Major</h3>
+<h4 id="content-warning-3">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name-3">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help-3">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css-3">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html-3">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor-3">Minor</h3>
+<h4 id="proper-screen-name-3">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+<h2 id="forms">Forms</h2>
+<h3 id="critical-4">Critical</h3>
+<h4 id="adjustable-moving-content-4">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation-4">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name-4">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency-4">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content-4">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh-4">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling-4">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css-4">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html-4">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name-4">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message-4">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language-4">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major-4">Major</h3>
+<h4 id="content-warning-4">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name-4">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help-4">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css-4">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html-4">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor-4">Minor</h3>
+<h4 id="proper-screen-name-4">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+<h2 id="readability">Readability</h2>
+<h3 id="critical-5">Critical</h3>
+<h4 id="adjustable-moving-content-5">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation-5">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name-5">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency-5">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content-5">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh-5">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling-5">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css-5">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html-5">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name-5">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message-5">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language-5">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major-5">Major</h3>
+<h4 id="content-warning-5">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name-5">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help-5">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css-5">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html-5">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor-5">Minor</h3>
+<h4 id="proper-screen-name-5">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+<h2 id="media">Media</h2>
+<h3 id="critical-6">Critical</h3>
+<h4 id="adjustable-moving-content-6">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation-6">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name-6">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency-6">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content-6">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh-6">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling-6">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css-6">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html-6">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name-6">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message-6">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language-6">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major-6">Major</h3>
+<h4 id="content-warning-6">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name-6">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help-6">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css-6">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html-6">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor-6">Minor</h3>
+<h4 id="proper-screen-name-6">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+<h2 id="apps">Apps</h2>
+<h3 id="critical-7">Critical</h3>
+<h4 id="adjustable-moving-content-7">adjustable-moving-content</h4>
+<p>Can the user stop moving content, e.g., scrolling, updating,
+flickering, or animated?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether it
+can be stopped by either a convenient control or OS shortcut.</p>
+<h4
+id="adjustable-screen-orientation-7">adjustable-screen-orientation</h4>
+<p>Can the user set screen orientation to portrait or landscape without
+loss of functionality?</p>
+<p>Hybrid</p>
+<p>In a mobile app, after turning the screen 90 degrees, chec that its
+orientation adjusts to landscape mode, either automatically or via a
+setting.</p>
+<h4 id="iframe-name-7">iframe-name</h4>
+<p>Does each iframe have a name?</p>
+<p>Auto</p>
+<p>Check that the iframe has an descriptive name.</p>
+<h4 id="maximum-flashing-frequency-7">maximum-flashing-frequency</h4>
+<p>Is flashing content at most the maximum frequency (3 times per
+second)?</p>
+<p>Manual</p>
+<p>Check that the screen contains flashing content, and if so, whether a
+timer finds the frequency to be more than 3 times per second.</p>
+<h4 id="maximum-moving-content-7">maximum-moving-content</h4>
+<p>Is moving content at most the maximum duration (5 seconds)?</p>
+<p>Manual</p>
+<p>Check that the screen contains moving content, and if so, whether a
+timer finds the motion to last more than 5 seconds.</p>
+<h4 id="no-auto-refresh-7">no-auto-refresh</h4>
+<p>Does the screen avoid automatic refreshes?</p>
+<p>Hybrid</p>
+<p>Check if the screen refreshes automatically after one minute.</p>
+<h4 id="no-horizontal-scrolling-7">no-horizontal-scrolling</h4>
+<p>Is full functionality available, without the need to horizontally
+scroll, when the screen is zoomed to 400%?</p>
+<p>Hybrid</p>
+<p>After zooming to about 400%, check that all interactive controls on
+the screen may be engaged without scrolling horizontally.</p>
+<h4 id="proper-css-7">proper-css</h4>
+<p>Is CSS coded according to best practice?</p>
+<p>Hybrid</p>
+<p>Check that CSS syntax follows best practice.</p>
+<h4 id="proper-html-7">proper-html</h4>
+<p>Is HTML coded according to best practice?</p>
+<p>Auto</p>
+<p>Check that HTML syntax follows best practice.</p>
+<h4 id="screen-name-7">screen-name</h4>
+<p>Does the screen have a name?</p>
+<p>Auto</p>
+<p>Check that the screen has a name.</p>
+<h4 id="status-message-7">status-message</h4>
+<p>Is a status message conveyed programmatically without changing focus
+(e.g., an error notification is available through a combination of cues
+involving an icon, color, sound, or text)?</p>
+<p>Manual</p>
+<p>Take an action that results in an error sound and check that a visual
+cue indicates this condition as well.</p>
+<p>With a screen reader active, check that a status message is announced
+automatically.</p>
+<h4 id="valid-screen-language-7">valid-screen-language</h4>
+<p>Does the screen designate a valid human language?</p>
+<p>Auto</p>
+<p>Check that the screen defines the natural language of its content,
+e.g., the lang attribute of the html tag has a value of en for
+English.</p>
+<p>In a web app, check whether the screen language is explicit and
+appropriate.</p>
+<h3 id="major-7">Major</h3>
+<h4 id="content-warning-7">content-warning</h4>
+<p>Is a user warned in advance of sensitive content that may trigger an
+emotional reaction?</p>
+<p>Manual</p>
+<p>Check that the screen contains sensitive content, and if so, whether
+advance warning makes it avoidable.</p>
+<h4 id="distinct-screen-name-7">distinct-screen-name</h4>
+<p>Is the name of the screen distinct among screens of the app?</p>
+<p>Hybrid</p>
+<p>Check if more than one screen has the same name.</p>
+<h4 id="local-help-7">local-help</h4>
+<p>At a focus point where a user may be unsure of a decision, is
+context-sensitive help available?</p>
+<p>Manual</p>
+<p>Check that an adjacent link to help content is available for a
+control that requires further explanation to an unfamiliar user.</p>
+<h4 id="valid-css-7">valid-css</h4>
+<p>Does CSS syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that CSS syntax is valid.</p>
+<h4 id="valid-html-7">valid-html</h4>
+<p>Does HTML syntax conform to official spec?</p>
+<p>Auto</p>
+<p>Check that HTML syntax is valid.</p>
+<h3 id="minor-7">Minor</h3>
+<h4 id="proper-screen-name-7">proper-screen-name</h4>
+<p>Is the screen name descriptive of its purpose, succinct in wording,
+and sequenced with the most inportant information first?</p>
+<p>Manual</p>
+<p>Check that, without reading content on the screen, its purpose is
+conveyed by the name.</p>
+<p>Check if the screen name is worded in a redundant or verbose manner,
+and whether its pieces of information are ordered from more to less
+specific.</p>
+</body>
+</html>
